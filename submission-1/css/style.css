@@ -1,14 +1,24 @@
-.slider h3,
-.slider h5,
-.mimo h3 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+.secA {
+    border-style: solid;
+    border: 1px;
+    display: inline;
 }
 
-.parallax-container {
-    height: 250px;
+h2,
+h3,
+h6 {
+    color: #4A148C;
+    text-align: center;
 }
 
-.parallax img {
-    filter: grayscale(1);
-    opacity: 65% !important;
+p {
+    text-align: center;
+}
+
+.burung,
+.ikan,
+.kucing,
+.kuda {
+    float: left;
+    position: relative;
 }

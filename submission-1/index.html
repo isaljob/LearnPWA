@@ -1,135 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!--Import Google Icon Font-->
+    <meta charset="UTF-8" />
+    <title>Mimo Apps</title>
+    <meta name="description" content="Mimo Apps untuk tugas submission PWA Dicoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
-    <!-- CSS Bikinan Sendiri -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4a148c" />
 </head>
 
+<!-- gambar diambil dari: https://unsplash.com/ -->
+<!-- deskripsi diambil dari: https://www.wikipedia.org -->
+
 <body>
-    <!-- Navbar -->
+    <!-- navigasi -->
     <div class="navbar-fixed">
-        <nav class="#4a148c purple darken-4">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">Mimo Apps</a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                    </ul>
-                </div>
+        <nav class="#4a148c purple darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo" id="logo-container">Mimo Apps</a>
+                <!-- ditambahkan sidebar jika dalam mobile mode atau ukuran layar kecil -->
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
             </div>
-        </nav>
-
-        <!-- Sidebar Nav -->
-        <ul class="sidenav" id="mobile-nav">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
     </div>
+    </nav>
 
-    <!-- Slider -->
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <img src="slider/ikan3.png"> <!-- random image -->
-                <div class="caption left-align">
-                    <h3>This is my Mimo Website!</h3>
-                    <h5 class="light grey-text text-lighten-3">He likes fishes very much.</h5>
-                </div>
-            </li>
-            <li>
-                <img src="slider/ikan2.png"> <!-- random image -->
-                <div class="caption right-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-            </li>
-            <li>
-                <img src="slider/ikan1.png"> <!-- random image -->
-                <div class="caption center-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <!-- div untuk di reload jika menu di pilih-->
+    <div class="container" id="body-content"></div>
 
-    <!-- About Mimo -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <h3 class="center light grey-text text-darken-3">About Mimo</h3>
-                <div class="col m6 light">
-                    <p>
-                        <b>What is Lorem Ipsum?</b><br>
-                        <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                    </p>
-                </div>
-                <div class="col m6">
-                    <p>Physical</p>
-                    <div class="progress">
-                        <div class="determinate" style="width: 85%"></div>
-                    </div>
-                    <p>Intellegence</p>
-                    <div class="progress">
-                        <div class="determinate" style="width: 99%"></div>
-                    </div>
-                    <p>Emotional</p>
-                    <div class="progress">
-                        <div class="determinate" style="width: 95%"></div>
-                    </div>
-                    <p>Agility</p>
-                    <div class="progress">
-                        <div class="determinate" style="width: 90%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mimo's Parallax -->
-    <div class="parallax-container">
-        <div class="parallax"><img src="slider/ikan3.png"></div>
-        <div class="container mimo">
-            <h3 class="center light white-text">Mimo's Parallax</h3>
-        </div>
-    </div>
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- script -->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
     <script>
-        const sideNav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sideNav);
-
-        const slider = document.querySelectorAll('.slider');
-        M.Slider.init(slider, {
-            indicators: false,
-            transition: 500,
-            interval: 3000
-        });
-
-        const parallax = document.querySelectorAll('.parallax');
-        M.Parallax.init(parallax);
+        // REGISTER SERVICE WORKER
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(function () {
+                        console.log("Pendaftaran ServiceWorker berhasil");
+                    })
+                    .catch(function () {
+                        console.log("Pendaftaran ServiceWorker gagal");
+                    });
+            });
+        } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+        }
     </script>
+    <!-- akhir script -->
 </body>
 
 </html>

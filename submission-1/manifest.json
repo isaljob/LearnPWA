@@ -1,0 +1,14 @@
+{
+    "name": "MimoApps",
+    "short_name": "Mimo",
+    "description": "Aplikasi PWA bernama Mimo Apps untuk submission",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#4a148c",
+    "theme_color": "#4a148c",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
