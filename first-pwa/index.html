@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>AplikasiKu</title>
-    <meta name="description" content="My first PWA" />
+    <title>Mimo Apps</title>
+    <meta name="description" content="Mimo Apps untuk tugas submission PWA Dicoding" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="manifest" href="/manifest.json">
@@ -12,18 +12,27 @@
     <meta name="theme-color" content="#4a148c" />
 </head>
 
-<body>
-    <nav class="#4a148c purple darken-4" role="navigation">
-        <div class="nav-wrapper container">
-            <a href="#" class="brand-logo" id="logo-container">AplikasiKu</a>
-            <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+<!-- gambar diambil dari: https://unsplash.com/ -->
+<!-- deskripsi diambil dari: https://www.wikipedia.org -->
 
-            <ul class="topnav right hide-on-med-and-down"></ul>
-            <ul class="sidenav" id="nav-mobile"></ul>
-        </div>
+<body>
+    <!-- navigasi -->
+    <div class="navbar-fixed">
+        <nav class="#4a148c purple darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo" id="logo-container">Mimo Apps</a>
+                <!-- ditambahkan sidebar jika dalam mobile mode atau ukuran layar kecil -->
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+    </div>
     </nav>
 
+    <!-- div untuk di reload jika menu di pilih-->
     <div class="container" id="body-content"></div>
+
+    <!-- script -->
     <script src="js/materialize.min.js"></script>
     <script src="js/nav.js"></script>
     <script>
@@ -43,6 +52,7 @@
             console.log("ServiceWorker belum didukung browser ini.");
         }
     </script>
+    <!-- akhir script -->
 </body>
 
 </html>

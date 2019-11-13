@@ -1,9 +1,12 @@
 .secA {
     border-style: solid;
     border: 1px;
+    display: inline;
 }
 
-h2 {
+h2,
+h3,
+h6 {
     color: limegreen;
     text-align: center;
 }
@@ -12,18 +15,7 @@ p {
     text-align: center;
 }
 
-.gambar:hover {
-    color: white;
-    opacity: 50%;
-}
-
-.gambar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-.parBurung {
-    text-align: left;
+.burung {
+    float: left;
+    position: relative;
 }

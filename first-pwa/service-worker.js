@@ -1,14 +1,20 @@
-const CACHE_NAME = "firstpwa-v1";
+const CACHE_NAME = "mimo-app";
 var urlsToCache = [
     "/",
     "/nav.html",
     "/index.html",
-    "/pages/home.html",
-    "/pages/about.html",
-    "/pages/contact.html",
+    "/pages/burung.html",
+    "/pages/ikan.html",
+    "/pages/kuda.html",
+    "/pages/kucing.html",
     "/css/materialize.min.css",
+    "/css/style.css",
     "/js/materialize.min.js",
-    "/js/nav.js"
+    "/js/nav.js",
+    "/img/ikan1.png",
+    "/img/ikan2.png",
+    "/img/burung1.png",
+    "/img/burung2.png"
 ];
 
 self.addEventListener("install", function (event) {
