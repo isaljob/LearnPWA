@@ -1,4 +1,4 @@
-const CACHE_NAME = "mimo-app";
+const CACHE_NAME = "mimo-appv2";
 var urlsToCache = [
     "/",
     "/nav.html",
