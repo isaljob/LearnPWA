@@ -1,0 +1,30 @@
+.flex-container {
+    border-style: solid;
+    border: 1px;
+    display: flexbox;
+}
+
+.row1 {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+h2,
+h3,
+h6 {
+    color: #4A148C;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* .burung,
+.ikan,
+.kucing,
+.kuda {
+    float: left;
+    position: relative;
+} */

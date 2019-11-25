@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mimo</title>
+    <meta name="description" content="Mimo Hijaiyah untuk belajar mengaji" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="theme-color" content="#4a148c" />
+</head>
+
+<body>
+    <!-- navigasi -->
+    <nav>
+        <div class="#4a148c purple darken-3 nav-wrapper">
+            <a href="#" class="brand-logo">MIMO</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar Nav -->
+    <!-- id disamakan dengan data-target pada icon menu -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <!-- Content -->
+    <h2>Selamat Belajar</h2>
+    <h6>Klik pada huruf untuk mendengarkan pelafalannya</h6>
+    <div class="induk row center">
+        <div class="a col m2 s4 center">
+            <img class="huruf" id="hurufA" width="128" src="../img/alif.png">
+            <audio class="bunyi" id="bunyiA" src="audio/Huruf Tanda Baca Fathah/fatah_a.mp3" autoplay="false"></audio>
+        </div>
+        <div class="ba col m2 s4 center">
+            <img class="huruf" id="hurufBa" width="128" src="../img/ba.png">
+            <audio class="bunyi" id="bunyiBa" src="audio/Huruf Tanda Baca Fathah/fatah_ba.mp3" autoplay="false"></audio>
+        </div>
+        <div class="ta col m2 s4 center">
+            <img class="huruf" id="hurufTa" width="128" src="../img/ta.png">
+            <audio class="bunyi" id="bunyiTa" src="audio/Huruf Tanda Baca Fathah/fatah_ta.mp3" autoplay="false"></audio>
+        </div>
+        <div class="tsa col m2 s4 center">
+            <img class="huruf" id="hurufTsa" width="128" src="../img/tsa.png">
+            <audio class="bunyi" id="bunyiTsa" src="audio/Huruf Tanda Baca Fathah/fatah_tsa.mp3"
+                autoplay="false"></audio>
+        </div>
+        <div class="ja col m2 s4 center">
+            <img class="huruf" id="hurufJa" width="128" src="../img/jim.png">
+            <audio class="bunyi" id="bunyiJa" src="audio/Huruf Tanda Baca Fathah/fatah_ja.mp3" autoplay="false"></audio>
+        </div>
+        <div class="ha col m2 s4 center">
+            <img class="huruf" id="hurufHa" width="128" src="../img/ha.png">
+            <audio class="bunyi" id="bunyiHa" src="audio/Huruf Tanda Baca Fathah/fatah_ha.mp3" autoplay="false"></audio>
+        </div>
+        <div class="kha col m2 s4 center">
+            <img class="huruf" id="hurufKha" width="128" src="../img/kha.png">
+            <audio class="bunyi" id="bunyiKha" src="audio/Huruf Tanda Baca Fathah/fatah_kho.mp3"
+                autoplay="false"></audio>
+        </div>
+        <div class="da col m2 s4 center">
+            <img class="huruf" id="hurufDa" width="128" src="../img/dal.png">
+            <audio class="bunyi" id="bunyiDa" src="audio/Huruf Tanda Baca Fathah/fatah_da.mp3" autoplay="false"></audio>
+        </div>
+    </div>
+
+
+
+    <!-- script -->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- akhir script -->
+</body>
+
+</html>
