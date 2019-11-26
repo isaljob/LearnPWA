@@ -1,36 +1,24 @@
-const CACHE_NAME = "mimo-appv3";
+const CACHE_NAME = "mimo-appv2";
 var urlsToCache = [
     "/",
+    "/nav.html",
     "/index.html",
+    "/pages/burung.html",
+    "/pages/ikan.html",
+    "/pages/kuda.html",
+    "/pages/kucing.html",
     "/css/materialize.min.css",
     "/css/style.css",
     "/js/materialize.min.js",
-    "/js/jquery-3.4.1.min.js",
-    "/js/main.js",
-    "/img/alif.png",
-    "/img/ba.png",
-    "/img/ta.png",
-    "/img/tsa.png",
-    "/img/jim.png",
-    "/img/ha.png",
-    "/img/kho.png",
-    "/img/dal.png",
-    "/img/dzal.png",
-    "/img/ra.png",
-    "/img/zai.png",
-    "/img/sin.png",
-    "/audio/Huruf Tanda Baca Fathah/fatah_a.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_ba.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_ta.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_tsa.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_ja.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_ha.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_kho.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_da.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_dza.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_ro.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_za.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_sa.mp3",
+    "/js/nav.js",
+    "/img/ikan1.png",
+    "/img/ikan2.png",
+    "/img/burung1.png",
+    "/img/burung2.png",
+    "/img/kucing1.png",
+    "/img/kucing2.png",
+    "/img/kuda1.png",
+    "/img/kuda2.png"
 ];
 
 self.addEventListener("install", function (event) {
@@ -48,7 +36,6 @@ self.addEventListener("fetch", function (event) {
             cacheName: CACHE_NAME
         })
         .then(function (response) {
-
             if (response) {
                 console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
                 return response;

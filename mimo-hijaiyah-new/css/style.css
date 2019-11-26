@@ -4,10 +4,11 @@
     display: flexbox;
 }
 
-.row1 {
-    display: inline-flex;
-    justify-content: space-between;
+.induk {
+    display: flex;
+    justify-content: center;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 h2,
@@ -21,10 +22,25 @@ p {
     text-align: center;
 }
 
-/* .burung,
-.ikan,
-.kucing,
-.kuda {
-    float: left;
-    position: relative;
-} */
+.kosong {
+    width: 128px;
+    height: 128px;
+    /* background-color: black;
+    border-width: 1px;
+    border-color: black; */
+}
+
+.a,
+.ba,
+.ta,
+.tsa,
+.ja,
+.ha,
+.kho,
+.da,
+.dza,
+.ra,
+.za,
+.sa {
+    border-radius: 50%;
+}

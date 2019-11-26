@@ -1,4 +1,4 @@
-const CACHE_NAME = "mimo-appv3";
+const CACHE_NAME = "mimo-v1";
 var urlsToCache = [
     "/",
     "/index.html",
@@ -13,7 +13,7 @@ var urlsToCache = [
     "/img/tsa.png",
     "/img/jim.png",
     "/img/ha.png",
-    "/img/kho.png",
+    "/img/kha.png",
     "/img/dal.png",
     "/img/dzal.png",
     "/img/ra.png",
@@ -30,7 +30,7 @@ var urlsToCache = [
     "/audio/Huruf Tanda Baca Fathah/fatah_dza.mp3",
     "/audio/Huruf Tanda Baca Fathah/fatah_ro.mp3",
     "/audio/Huruf Tanda Baca Fathah/fatah_za.mp3",
-    "/audio/Huruf Tanda Baca Fathah/fatah_sa.mp3",
+    "/audio/Huruf Tanda Baca Fathah/fatah_sa.mp3"
 ];
 
 self.addEventListener("install", function (event) {
@@ -48,7 +48,6 @@ self.addEventListener("fetch", function (event) {
             cacheName: CACHE_NAME
         })
         .then(function (response) {
-
             if (response) {
                 console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
                 return response;

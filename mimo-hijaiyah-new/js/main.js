@@ -1,5 +1,5 @@
 // init sidenav ketika content berhasil di load 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (event) {
     var sideNav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sideNav);
 
@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
         bunyi.play();
     });
 
-    const kha = document.querySelector('.kha');
-    kha.addEventListener('click', function () {
-        const bunyi = kha.children[1];
+    const kho = document.querySelector('.kho');
+    kho.addEventListener('click', function () {
+        const bunyi = kho.children[1];
         bunyi.play();
     });
 
@@ -52,5 +52,28 @@ document.addEventListener('DOMContentLoaded', function () {
         bunyi.play();
     });
 
+    const dza = document.querySelector('.dza');
+    dza.addEventListener('click', function () {
+        const bunyi = dza.children[1];
+        bunyi.play();
+    });
+
+    const ra = document.querySelector('.ra');
+    ra.addEventListener('click', function () {
+        const bunyi = ra.children[1];
+        bunyi.play();
+    });
+
+    const za = document.querySelector('.za');
+    za.addEventListener('click', function () {
+        const bunyi = za.children[1];
+        bunyi.play();
+    });
+
+    const sa = document.querySelector('.sa');
+    sa.addEventListener('click', function () {
+        const bunyi = sa.children[1];
+        bunyi.play();
+    });
 
 });
